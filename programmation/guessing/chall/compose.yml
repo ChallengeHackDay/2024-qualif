@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  moyenne:
+    restart: unless-stopped
+    build: .
+    ports:
+      - 50395:12345=
