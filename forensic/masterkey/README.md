@@ -17,5 +17,7 @@ Téléchargez la machine virtuelle et fouillez dedans pour pouvoir résoudre cet
 Download the virtual machine and look inside to solve the challenge !
 
 ----- INFO -----
+
 OVA file: https://hackday.s3.rbx.io.cloud.ovh.net/Buckets/Windows_10_Hackday.ova
+
 sha256: 17fc1e93c183b89c7c92a6d3904a42862fc2f63ead087936cde63dd14e3d4abb
