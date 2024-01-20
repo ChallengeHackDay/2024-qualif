@@ -10,4 +10,6 @@ Find in this data the flag associated with the file sought.
 
 ----- INFOS -----
 
+File: https://hackday.s3.rbx.io.cloud.ovh.net/Buckets/dump.dd
+
 sha256: 7b8b746050a7db026a8acececeeea0837a4f02d0a2d8c00be2ec5859e2b45664
