@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  HackemonV2:
+    restart: unless-stopped
+    ports:
+      - 50392:1998
+    build: .
+  poste_io:
+    restart: unless-stopped
+    image: analogic/poste.io:latest
+    volumes:
+      - ./posteio_data:/data
+    ports:
+      - 443:443
+      - 587:587
+    environment:
+      - DISABLE_CLAMAV=TRUE
+      - DISABLE_RSPAMD=TRUE
+      - DISABLE_ROUNDCUBE=TRUE
