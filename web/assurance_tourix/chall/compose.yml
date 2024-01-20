@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  assurance_tourix:
+    restart: unless-stopped
+    build: .
+    ports:
+      - 50390:80
