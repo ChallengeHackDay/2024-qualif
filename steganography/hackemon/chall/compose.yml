@@ -6,6 +6,7 @@ services:
       - 50392:1998
     build: .
   poste_io:
+  # for poste_io, don't forget to do a DNS with MX, SPF, DMARC, DKIM entries
     restart: unless-stopped
     image: analogic/poste.io:latest
     volumes:
