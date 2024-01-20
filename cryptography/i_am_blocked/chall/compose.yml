@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  block:
+    restart: unless-stopped
+    build: .
+    ports:
+      - 50397:12345
