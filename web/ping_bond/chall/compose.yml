@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  ping-bond:
+    restart: unless-stopped
+    build: .
+    ports:
+      - 50394:5000
