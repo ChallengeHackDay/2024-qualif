@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  motus:
+    restart: unless-stopped
+    build: .
+    ports:
+      - 50393:12345
