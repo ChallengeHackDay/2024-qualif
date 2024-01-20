@@ -21,20 +21,22 @@ In the `access.log` file, we can see that there are a lot of requests to differe
 
 Here, we can say that the requester performed a scan of the website, like `dirb` or `gobuster` would do.
 This is a directory-based attack to find hidden pages on a website.
+![image](https://github.com/ChallengeHackDay/2024-qualif/assets/40593456/850a9223-85a9-473c-9a41-581fdd27ab9d)
 
-![dirb_extract.png](dirb_extract.png)
 
 Always in the `access.log` file, we can see that there are a lot of requests to the same page, using **POST**, that came from the same requester.
 
 Here, we can say that the attacker performed a brute-force attack on the admin login page of the website.
 
-![bruteforce_extract.png](bruteforce_extract.png)
+![image](https://github.com/ChallengeHackDay/2024-qualif/assets/40593456/866c259a-4578-4cc5-b06b-1cbdca11d6c2)
+
 
 We can now see that the attacker managed to find the admin password, and logged in.
 
 After that, we can see that the attacker install a plugin on the website.
 
-![plugin_install.png](plugin_install.png)
+![image](https://github.com/ChallengeHackDay/2024-qualif/assets/40593456/524a80df-f70d-405d-a6b4-cdaa0e2a338c)
+
 
 This plugin is webshell, that allows the attacker to execute commands on the server.
 
