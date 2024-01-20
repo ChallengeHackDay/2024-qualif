@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  flip-the-bit:
+    restart: unless-stopped
+    build: .
+    ports:
+      - 50398:12345
