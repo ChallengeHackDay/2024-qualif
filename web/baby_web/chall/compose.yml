@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  ds-bandit:
+    restart: unless-stopped
+    build: .
+    ports:
+      - 50399:80
