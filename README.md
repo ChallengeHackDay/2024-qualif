@@ -20,7 +20,6 @@ All challenges were created with love by the students :
 - Isnubi = Louis GAMBART
 - Lancelot
 - The pizza
-- 
 - Yam = Yanis AMARA
 - ZEN
 
