@@ -12,7 +12,7 @@ Big congratulations to the x participating teams !
 ### Challenges
 
 All challenges were created with love by the students : 
-- Alexandrebb
+- Alexandrerbb
 - Blackjack = Théo PERESSE-GOURBIL
 - Chelinka
 - Didouad = Adrien BEHR
