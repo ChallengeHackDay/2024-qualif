@@ -4,21 +4,18 @@ This chall is based on the use of litteral encryption in rust lang to hide some 
 ## First steps
 First, when we launch the binary, we are asked to type a password. As the guess is false, we got a "Wrong password" printed. 
 
-![image](https://github.com/ChallengeHackDay/2024-qualif/assets/40593456/db68f9f9-6423-4e1d-b3c5-8cabe9cf2a6b)
-
+![image](https://github.com/ChallengeHackDay/2024-qualif/assets/40593456/b954c76a-eb08-4cec-a8ee-8683bf68a746)
 
 A quick **strings** on the binary with a grep has no match with anything that looks like a flag. sad. 
 
 Let begin the reverse. 
 
-![image](https://github.com/ChallengeHackDay/2024-qualif/assets/40593456/ed8f6631-ea8b-4228-b615-c9667310a348)
-
+![image](https://github.com/ChallengeHackDay/2024-qualif/assets/40593456/7997efc0-532d-473b-9b7f-c299617b558b)
 
 ## Decompile 
 I personnaly use ida, but I think any other should be fine. first, lets dissassemble the binary and take a look. The first point is to find where the string Wrong password is called, and look around, we shoud have a comparaison around this point. 
 
 ![image](https://github.com/ChallengeHackDay/2024-qualif/assets/40593456/f09a5c01-e2dd-4903-867c-924eebf66bf1)
-
 
 Here, we can see a function called "admintool::licryptinternal::decryptbytes" with two parameters that seems to be random. But there is no ransomness here ! If we take a look at the rust library, we easly find that xor is used to encrypt the key with a static key : 'l33t'... If we take the smallest argument from the function call, and xor it with the static key, we find the key used for litteral encryption : 'HACKDAY'...
 
